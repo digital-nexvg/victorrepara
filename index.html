@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Victor Repara | Climatização e Refrigeração Comercial</title>
+  <meta name="description" content="Instalação, manutenção e contratos PMOC de climatização e refrigeração comercial.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="logo"><img src="images/logo.png" alt="Victor Repara" width="104" height="65"></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="nav">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+        <a href="https://wa.me/5521982499976" class="btn btn--small" target="_blank" rel="noopener">Orçamento</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. HERO -->
+    <section class="hero" id="inicio">
+      <div class="container hero__content">
+        <span class="eyebrow eyebrow--light">Climatização &amp; Refrigeração Comercial</span>
+        <h1>Seu negócio funcionando no clima certo, todos os dias.</h1>
+        <p>Instalação, manutenção preventiva e corretiva para empresas que não podem parar. Atendimento rápido e equipe técnica certificada.</p>
+        <div class="hero__actions">
+          <a href="https://wa.me/5521982499976?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento."
+             class="btn btn--whatsapp" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11.9 11.9 0 0 0 12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6A12 12 0 0 0 12 24c6.6 0 12-5.4 12-12 0-3.2-1.2-6.2-3.5-8.5ZM12 22a10 10 0 0 1-5.1-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A10 10 0 1 1 12 22Zm5.5-7.5c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-1 1.2-.4.2-.7.1a8.200 8.200 0 0 1-4-3.500c-.3-.5.3-.5.9-1.600.1-.2 0-.4 0-.5l-.9-2.200c-.2-.6-.5-.5-.7-.5h-.6a1.200 1.200 0 0 0-.9.4 3.700 3.700 0 0 0-1.100 2.700 6.400 6.400 0 0 0 1.300 3.400 14.600 14.600 0 0 0 5.600 4.900c2 .8 2.800.9 3.800.7a3.200 3.200 0 0 0 2.100-1.500 2.600 2.600 0 0 0 .2-1.500c-.1-.1-.3-.2-.6-.3Z"/></svg>
+            Falar no WhatsApp
+          </a>
+          <a href="#servicos" class="btn btn--ghost">Conheça os serviços</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. SOBRE NÓS -->
+    <section class="section" id="sobre">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Quem somos</span>
+          <h2>Sobre nós</h2>
+        </div>
+        <div class="grid-2 about">
+        <div class="reveal about__content">
+          <div class="stats">
+            <div class="stat">
+              <strong>+16</strong>
+              <span>anos no mercado</span>
+            </div>
+            <div class="stat">
+              <strong>100%</strong>
+              <span>satisfação</span>
+            </div>
+            <div class="stat">
+              <strong>+1000</strong>
+              <span>clientes atendidos</span>
+            </div>
+            <div class="stat stat--areas">
+              <strong>Áreas de atuação:</strong>
+              <div class="areas">
+                <button type="button" class="area-btn" data-modal="clima">Climatização e Ar Condicionado</button>
+                <button type="button" class="area-btn" data-modal="refri">Refrigeração Comercial e Industrial</button>
+                <button type="button" class="area-btn" data-modal="pmoc">Contratos Corporativos e Engenharia (PMOC)</button>
+              </div>
+            </div>
+          </div>
+          <ul class="checklist">
+            <li>Equipe técnica qualificada</li>
+            <li>Atendimento emergencial</li>
+            <li>Garantia em todos os serviços</li>
+          </ul>
+        </div>
+        <div class="about__image reveal">
+          <img src="images/sobre.webp" alt="Equipe Victor Repara em atendimento" loading="lazy">
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SERVIÇOS REALIZADOS -->
+    <section class="section section--blue" id="realizados">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow eyebrow--light">Portfólio</span>
+          <h2>Serviços Realizados</h2>
+          <p>Alguns dos trabalhos entregues com excelência aos nossos clientes.</p>
+        </div>
+        <div class="carousel reveal" id="carousel" aria-roledescription="carrossel" aria-label="Serviços realizados">
+          <div class="carousel__viewport">
+            <div class="carousel__track" id="carouselTrack">
+              <figure class="carousel__slide"><img src="images/servico-1.webp" alt="Serviço realizado 1" loading="lazy"></figure>
+              <figure class="carousel__slide"><img src="images/servico-2.webp" alt="Serviço realizado 2" loading="lazy"></figure>
+              <figure class="carousel__slide"><img src="images/servico-3.webp" alt="Serviço realizado 3" loading="lazy"></figure>
+              <figure class="carousel__slide"><img src="images/servico-4.webp" alt="Serviço realizado 4" loading="lazy"></figure>
+              <figure class="carousel__slide"><img src="images/servico-5.webp" alt="Serviço realizado 5" loading="lazy"></figure>
+              <figure class="carousel__slide"><img src="images/servico-6.webp" alt="Serviço realizado 6" loading="lazy"></figure>
+              <figure class="carousel__slide"><img src="images/servico-7.webp" alt="Serviço realizado 7" loading="lazy"></figure>
+              <figure class="carousel__slide"><img src="images/servico-8.webp" alt="Serviço realizado 8" loading="lazy"></figure>
+            </div>
+          </div>
+          <button class="carousel__btn carousel__btn--prev" id="carouselPrev" aria-label="Imagem anterior">‹</button>
+          <button class="carousel__btn carousel__btn--next" id="carouselNext" aria-label="Próxima imagem">›</button>
+          <div class="carousel__dots" id="carouselDots"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SERVIÇOS -->
+    <section class="section section--alt" id="servicos">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Nossos serviços</span>
+          <h2>Soluções completas para o seu negócio</h2>
+        </div>
+        <div class="grid-3">
+          <article class="card reveal">
+            <div class="card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="8" rx="2"/><path d="M6 16v2M12 16v4M18 16v2"/></svg>
+            </div>
+            <h3>Climatização</h3>
+            <p>Projeto, instalação e manutenção de ar-condicionado split, cassete, piso-teto e VRF para ambientes corporativos.</p>
+            <a href="https://wa.me/5521982499976" target="_blank" rel="noopener" class="card__link">Solicitar orçamento →</a>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20M4.900 7l14.200 10M4.900 17 19.100 7M9 3.500l3 2.500 3-2.500M9 20.500l3-2.500 3 2.500"/></svg>
+            </div>
+            <h3>Refrigeração Comercial</h3>
+            <p>Câmaras frias, balcões, expositores e freezers: manutenção corretiva, preventiva e instalação para manter a cadeia fria.</p>
+            <a href="https://wa.me/5521982499976" target="_blank" rel="noopener" class="card__link">Solicitar orçamento →</a>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 15l2 2 4-4"/></svg>
+            </div>
+            <h3>Contratos &amp; PMOC</h3>
+            <p>Plano de Manutenção, Operação e Controle conforme a legislação, com laudos, relatórios e visitas programadas.</p>
+            <a href="https://wa.me/5521982499976" target="_blank" rel="noopener" class="card__link">Solicitar orçamento →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. PRINCIPAIS SERVIÇOS -->
+    <section class="section" id="principais">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Especialidades</span>
+          <h2>Nossos Principais Serviços</h2>
+        </div>
+        <div class="grid-3">
+          <article class="card card--feature reveal">
+            <div class="card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/></svg>
+            </div>
+            <h3>Placa de Ar Condicionado</h3>
+            <p>Reparo em placas inverter e ON/OFF.</p>
+            <a href="https://wa.me/5521982499976?text=Ol%C3%A1!%20Preciso%20de%20reparo%20em%20placa%20de%20ar%20condicionado." target="_blank" rel="noopener" class="card__link">Falar no WhatsApp →</a>
+          </article>
+          <article class="card card--feature reveal">
+            <div class="card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg>
+            </div>
+            <h3>Conserto de Placa Eletrônica</h3>
+            <p>Manutenção especializada.</p>
+            <a href="https://wa.me/5521982499976?text=Ol%C3%A1!%20Preciso%20de%20conserto%20de%20placa%20eletr%C3%B4nica." target="_blank" rel="noopener" class="card__link">Falar no WhatsApp →</a>
+          </article>
+          <article class="card card--feature reveal">
+            <div class="card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.700 6.300a1 1 0 0 0 0 1.400l1.600 1.600a1 1 0 0 0 1.400 0l3.800-3.800a6 6 0 0 1-7.900 7.900l-6.900 6.900a2.100 2.100 0 0 1-3-3l6.900-6.900a6 6 0 0 1 7.900-7.900z"/></svg>
+            </div>
+            <h3>Conserto de Placa Mãe</h3>
+            <p>Assistência técnica completa.</p>
+            <a href="https://wa.me/5521982499976?text=Ol%C3%A1!%20Preciso%20de%20conserto%20de%20placa%20m%C3%A3e." target="_blank" rel="noopener" class="card__link">Falar no WhatsApp →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 4. RODAPÉ -->
+  <footer class="footer" id="contato">
+    <div class="container footer__grid">
+      <div>
+        <a href="#inicio" class="logo logo--light"><img src="images/logo.png" alt="Victor Repara" width="104" height="65"></a>
+        <p class="footer__text">Climatização e refrigeração comercial com qualidade, agilidade e compromisso.</p>
+      </div>
+      <div>
+        <h4>Links</h4>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre nós</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="https://wa.me/5521982499976" target="_blank" rel="noopener">WhatsApp: (21) 98249-9976</a></li>
+          <li><a href="mailto:contato@victorrepara.com.br">contato@victorrepara.com.br</a></li>
+          <li>Rua Tomás Fonseca, 1313 – Nova Iguaçu/RJ</li>
+          <li>Seg a Sex: 8h às 18h</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <small>© <span id="year"></span> Victor Repara. Todos os direitos reservados. CNPJ 28.669.351/0001-09</small>
+        <span class="devby">Site desenvolvido por <img src="images/nexvg.jpg" alt="NexVG" height="28"></span>
+      </div>
+    </div>
+  </footer>
+
+  <dialog class="modal" id="areaModal" aria-labelledby="modalTitle">
+    <button type="button" class="modal__close" id="modalClose" aria-label="Fechar">&times;</button>
+    <h3 id="modalTitle"></h3>
+    <p class="modal__lead" id="modalLead"></p>
+    <ul class="modal__list" id="modalList"></ul>
+    <a href="https://wa.me/5521982499976" class="btn btn--whatsapp" target="_blank" rel="noopener">Solicitar orçamento</a>
+  </dialog>
+
+  <a href="https://wa.me/5521982499976?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento." class="wa-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <span class="wa-float__label">Fale conosco</span>
+    <span class="wa-float__icon">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11.9 11.9 0 0 0 12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6A12 12 0 0 0 12 24c6.6 0 12-5.4 12-12 0-3.2-1.2-6.2-3.5-8.5ZM12 22a10 10 0 0 1-5.1-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A10 10 0 1 1 12 22Zm5.5-7.5c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-1 1.2-.4.2-.7.1a8.200 8.200 0 0 1-4-3.500c-.3-.5.3-.5.9-1.600.1-.2 0-.4 0-.5l-.9-2.200c-.2-.6-.5-.5-.7-.5h-.6a1.200 1.200 0 0 0-.9.4 3.700 3.700 0 0 0-1.100 2.700 6.400 6.400 0 0 0 1.300 3.400 14.600 14.600 0 0 0 5.600 4.900c2 .8 2.800.9 3.800.7a3.200 3.200 0 0 0 2.100-1.500 2.600 2.600 0 0 0 .2-1.500c-.1-.1-.3-.2-.6-.3Z"/></svg>
+    </span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
