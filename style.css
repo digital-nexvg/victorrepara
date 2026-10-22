@@ -28,6 +28,34 @@ ul { list-style: none; }
 .section--alt { background: var(--gray-100); }
 .section__head { text-align: center; max-width: 640px; margin: 0 auto 56px; }
 
+/* Marcas credenciadas */
+.brands { padding: 80px 0; overflow: hidden; }
+.brands .section__head { margin-bottom: 40px; }
+.brands .section__head h2 { margin-bottom: 12px; }
+.brands__viewport {
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+}
+.brands__track {
+  display: flex;
+  width: max-content;
+  animation: brands-scroll 42s linear infinite;
+}
+.brands__group { display: flex; flex: 0 0 auto; gap: 24px; margin-right: 24px; }
+.brands__item {
+  width: 170px;
+  height: 100px;
+  display: grid;
+  place-items: center;
+  padding: 18px;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+  background: var(--white);
+}
+.brands__item img { max-width: 100%; max-height: 100%; object-fit: contain; }
+.brands__viewport:hover .brands__track { animation-play-state: paused; }
+@keyframes brands-scroll { to { transform: translateX(-50%); } }
+
 h1, h2, h3, h4 { line-height: 1.2; }
 h2 { font-size: clamp(1.7rem, 3vw, 2.4rem); margin-bottom: 18px; }
 h3 { font-size: 1.25rem; margin-bottom: 10px; }
@@ -345,10 +373,15 @@ p { color: var(--gray-600); }
   .carousel { --per-view: 1; }
   .carousel__btn--prev { left: 6px; }
   .carousel__btn--next { right: 6px; }
+  .brands { padding: 64px 0; }
+  .brands__item { width: 140px; height: 84px; padding: 14px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .wa-float__icon::before { animation: none; }
   html { scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; transition: none; }
+  .brands__viewport { overflow-x: auto; }
+  .brands__track { animation: none; }
+  .brands__group[aria-hidden="true"] { display: none; }
 }
