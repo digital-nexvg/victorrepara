@@ -113,6 +113,11 @@ p { color: var(--gray-600); }
 .logo--light img { height: 56px; }
 .nav { display: flex; align-items: center; gap: 32px; color: var(--navy-900); font-weight: 500; }
 .nav a:not(.btn):hover { color: var(--blue-500); }
+.header__actions { display: flex; align-items: center; gap: 12px; }
+.header__instagram { display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; }
+.header__instagram img { display: block; width: 30px; height: 30px; object-fit: contain; }
+.header__instagram:hover { opacity: .75; }
+.header__instagram:focus-visible { outline: 2px solid var(--blue-500); outline-offset: 3px; border-radius: 4px; }
 .nav-toggle { display: none; background: none; border: 0; cursor: pointer; padding: 8px; }
 .nav-toggle span { display: block; width: 24px; height: 2px; background: var(--navy-900); margin: 5px 0; transition: .3s; }
 
